@@ -1,0 +1,159 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* max-width: 1650px; */
+}
+
+.image_container {
+    position: relative;
+    width: 66%; /* Container width */
+    height: 100%; /* Example height */
+    display: block;
+    overflow: hidden; /* Ensures no overflow when using object-fit */
+}
+
+.image_container img {
+    width: 100%; /* Reduce width */
+    height: 100%; /* Ensure it fills container height */
+    object-fit: cover; /* Ensures image covers the entire container */
+    display: block;
+}
+
+.text_overlay {
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    background: rgba(0, 0, 0, 0.6);
+    /* opacity: 0.6; */
+    color: white;
+    top: 8rem;
+    text-align: center;
+    font-size: 5em;
+
+    /* Flexbox properties for centering */
+    display: flex;
+    align-items: center; /* Vertically centers content */
+    justify-content: center; /* Horizontally centers content */
+}
+
+.odin_title {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text_overlay p {
+    text-align: center; /* Ensure the text is centered */
+}
+
+.form_creation {
+    width: 100%;
+}
+
+.form_container {
+    /* position: relative; */
+    padding-right: 150px;
+    padding-left: 30px;
+    padding-top: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 10px;
+    /* padding: 20px; */
+}
+
+.disclaimer {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.new_line {
+    display: block;
+    margin-top: 20px; /* Optional: add space between lines */
+}
+
+.do_this {
+    display: block;
+    margin-top: 90px; /* Optional: add space between lines */
+    padding-bottom: 40px;
+}
+
+form input {
+    width: calc(150% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+form input:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+form .password_error {
+    border-color: red !important;
+}
+
+form .form_row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 250px;
+}
+
+form .shadow_section {
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.create_account_button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.create_account_button:hover {
+    background-color: #45a049;
+}
+
+.login_text {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 15px;
+}
+
+.login_text a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.login_text a:hover {
+    text-decoration: underline;
+}
+
+form label {
+    display: block;
+}
+
+.form_footer {
+    position: relative;
+    text-align: center; /* Center the footer content */
+    margin-top: 20px; /* Add space above the footer */
+}
